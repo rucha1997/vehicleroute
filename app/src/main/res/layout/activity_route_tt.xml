@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RouteTT">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+        <TextView
+            android:id="@+id/text_view1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:text="Empty"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="30dp" />
+
+        <TextView
+            android:id="@+id/text_view2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="150dp"
+            android:background="#fbc2f4"
+            android:text="Sample TextView 2"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/text_view3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="200dp"
+            android:background="#d9c0f0"
+            android:text="Sample TextView 3"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/text_view4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="250dp"
+            android:background="#b78cda"
+            android:text="Sample TextView 4"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/text_view5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="300dp"
+            android:background="#d98bd1"
+            android:text="Sample TextView 5"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/text_view6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="350dp"
+            android:background="#B0C4DE"
+            android:text="Sample TextView 6"
+            android:textSize="15sp" />
+
+
+    </FrameLayout>
+
+</RelativeLayout>
