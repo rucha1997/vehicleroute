@@ -3,18 +3,34 @@ package com.example.rucha.myapplication;
 import android.app.Activity;
 import android.os.Bundle;
 import android.widget.TextView;
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
+//import com.google.firebase.auth.AuthResult;
+//import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+
 
 
 public class RouteTT extends Activity {
 
     private TextView mTextView;
+    private DatabaseReference mDatabase;
+    final FirebaseDatabase database = FirebaseDatabase.getInstance();
+    DatabaseReference ref = database.getReference("https://myapplication2-1c792.firebaseio.com/");
+
+// Attach a listener to read the data at our posts reference
+
+    //database.child("Route").child("Rahatani Phata").child("Chaphekar Chowk").setValue("20000");
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_route_tt);
 
-
+        //firebase=new Firebase("https://myapplication2-1c792.firebaseio.com/");
         TextView  textView=(TextView) findViewById(R.id.text_view1);
         TextView  textView1=(TextView) findViewById(R.id.text_view2);
         TextView  textView2=(TextView) findViewById(R.id.text_view3);
@@ -23,7 +39,7 @@ public class RouteTT extends Activity {
         TextView  textView5=(TextView) findViewById(R.id.text_view6);
         Bundle bundle=getIntent().getExtras();
         String data=bundle.get("data").toString();
-        textView.setText(data+" Route Details : ");
+        textView.setText(data+" Fee Details : ");
 
         switch(data)
         {
